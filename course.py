@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 
 company_list = [
-    r'D:\\University\\7th semester\\Data analysis\\S&P_resources\\individual_stocks_5yr\\AAPL_data.csv',
-    r'D:\\University\\7th semester\\Data analysis\\S&P_resources\\individual_stocks_5yr\\AMZN_data.csv',
-    r'D:\\University\\7th semester\\Data analysis\\S&P_resources\\individual_stocks_5yr\\GOOG_data.csv',
-    r'D:\\University\\7th semester\\Data analysis\\S&P_resources\\individual_stocks_5yr\\MSFT_data.csv'
+    r'AAPL_data.csv',
+    r'AMZN_data.csv',
+    r'GOOG_data.csv',
+    r'MSFT_data.csv'
 ]
 
 all_data = pd.DataFrame()
@@ -89,4 +89,5 @@ fig5, ax1 = plt.subplots()
 sns.heatmap(closing_price.corr(), annot=True, cmap= "coolwarm", ax=ax1)
 st.pyplot(fig5)
 st.markdown("---")
+
 st.markdown("**Note:** This dashboard provides basic technical analysis of major tech stocks using Python")
